@@ -15,7 +15,7 @@ export const siteConfig = {
       {
         label: "Démarche NIRD",
         items: [
-          { label: "Les 3 Piliers", href: "/#piliers" },
+          { label: "Les 4 Piliers", href: "/#piliers" },
           { label: "Les Acteurs", href: "/#acteurs" },
           { label: "Site officiel NIRD", href: "https://nird.forge.apps.education.fr/" },
         ],
@@ -42,7 +42,7 @@ export const siteConfig = {
 
   // Configuration du Hero
   hero: {
-    title: "L'École résiste au Goliath numérique",
+    title: "La dépendance des écoles aux géants de la tech",
     subtitle: "Face aux dépendances technologiques, construisons ensemble un numérique éducatif autonome et durable",
     description:
       "NIRD est une démarche collective pour libérer les établissements scolaires de l'emprise des Big Tech : matériel obsolète, licences coûteuses, données hors UE... Reprenons le pouvoir d'agir !",

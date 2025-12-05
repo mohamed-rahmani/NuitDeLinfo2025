@@ -111,3 +111,6 @@ Palettre de couleurs du site:
 
 Lien de la démarche NIRD:
 https://nird.forge.apps.education.fr/
+
+Lien du site du Hidden Snake:
+https://mohamed-rahmani.github.io/HiddenSnakeGame/

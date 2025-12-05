@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="text-center max-w-4xl mx-auto mb-16 space-y-6">
           <div className="inline-block px-4 py-2 bg-linear-to-r from-blue-50 to-purple-50 rounded-full border border-purple-200">
             <span className="text-sm font-medium text-purple-700">
-              💪 {siteConfig.tagline}
+              {siteConfig.tagline}
             </span>
           </div>
           
@@ -41,22 +41,6 @@ export default function Hero() {
             >
               <a href={hero.cta.secondary.href} target="_blank" rel="noopener noreferrer">{hero.cta.secondary.text}</a>
             </Button>
-          </div>
-
-          {/* Stats minimalistes */}
-          <div className="flex gap-8 justify-center pt-8">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-purple-600">∞</div>
-              <div className="text-xs md:text-sm text-gray-600">Matériel sauvé</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-green-600">100%</div>
-              <div className="text-xs md:text-sm text-gray-600">Logiciels libres</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-pink-600">0€</div>
-              <div className="text-xs md:text-sm text-gray-600">Dépendance Big Tech</div>
-            </div>
           </div>
         </div>
       </div>

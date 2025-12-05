@@ -1,25 +1,96 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Download, Check } from 'lucide-react'
 import ActionHeader from '../components/ActionHeader'
+import { useState } from 'react'
+import BouncyImage from '../components/BouncyImage'
 
 export default function LinuxPage() {
+  const [isHovering, setIsHovering] = useState(false)
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      {/* Failles sur les côtés */}
+      {/* Côté gauche */}
+      <div className="absolute left-0 top-0 h-full w-32 pointer-events-none z-10">
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute left-0 top-20 opacity-80"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute left-0 top-[400px] opacity-80"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute left-0 top-[780px] opacity-80"
+          style={{ imageRendering: 'pixelated' }}
+        />
+      </div>
+      
+      {/* Côté droit */}
+      <div className="absolute right-0 top-0 h-full w-32 pointer-events-none z-10">
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute right-0 top-32 opacity-80 scale-x-[-1]"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute right-0 top-[480px] opacity-80 scale-x-[-1]"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute right-0 top-[860px] opacity-80 scale-x-[-1]"
+          style={{ imageRendering: 'pixelated' }}
+        />
+      </div>
+      
       <ActionHeader />
 
       <main className="max-w-4xl mx-auto px-6 py-16">
         {/* Hero */}
-        <div className="mb-16">
-          <div className="flex items-center gap-6 mb-6">
-            <Image
-              src="/logo-linux.webp"
-              alt="Logo Linux"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
+        <div className="mb-16 relative">
+          <div className="flex items-center gap-6 mb-6 relative">
+            <Link 
+              href="https://mohamed-rahmani.github.io/HiddenSnakeGame/"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+              className="block w-20 h-20 relative shrink-0"
+            >
+              <Image
+                src={isHovering ? "/logo-linux-carton.png" : "/logo-linux.png"}
+                alt="Logo Linux"
+                width={80}
+                height={80}
+                className="object-contain transition-all duration-200"
+              />
+            </Link>
+            
             <h1 className="text-5xl font-bold text-gray-900">
               Adopter Linux
             </h1>
@@ -172,6 +243,36 @@ export default function LinuxPage() {
                 Retour à l'accueil
               </Link>
             </Button>
+          </div>
+        </div>
+        
+        <div className='flex justify-center mt-16'>
+        <BouncyImage src="/visuel.png" width={80}/>
+        </div>
+
+        {/* Explication BouncyImage NIRD */}
+        <div className="mt-16 mb-8">
+          <div className="bg-linear-to-br from-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              💡 Le composant BouncyImage et la démarche NIRD
+            </h3>
+            <p className="text-gray-700 mb-4">
+              Ce composant interactif illustre parfaitement les trois piliers du NIRD :
+            </p>
+            <div className="space-y-3 text-gray-700">
+              <div className="flex items-start gap-3">
+                <span className="font-bold text-blue-600">🤝 Inclusif :</span>
+                <span>Animation simple et légère, accessible à tous, sans nécessiter de GPU puissant</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="font-bold text-purple-600">🛡️ Responsable :</span>
+                <span>Code open-source réutilisable, pas de dépendances lourdes ou de tracking</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="font-bold text-green-600">♻️ Durable :</span>
+                <span>Optimisé pour une consommation minimale de ressources, fonctionne sur du matériel ancien</span>
+              </div>
+            </div>
           </div>
         </div>
       </main>
