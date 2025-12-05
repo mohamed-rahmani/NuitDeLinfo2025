@@ -245,8 +245,35 @@ export default function LinuxPage() {
             </Button>
           </div>
         </div>
-        <div className='flex justify-center pt-15'>
-        <BouncyImage src="/visuel.png" width={80} />
+        
+        <div className='flex justify-center mt-16'>
+        <BouncyImage src="/visuel.png" width={80}/>
+        </div>
+
+        {/* Explication BouncyImage NIRD */}
+        <div className="mt-16 mb-8">
+          <div className="bg-linear-to-br from-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              💡 Le composant BouncyImage et la démarche NIRD
+            </h3>
+            <p className="text-gray-700 mb-4">
+              Ce composant interactif illustre parfaitement les trois piliers du NIRD :
+            </p>
+            <div className="space-y-3 text-gray-700">
+              <div className="flex items-start gap-3">
+                <span className="font-bold text-blue-600">🤝 Inclusif :</span>
+                <span>Animation simple et légère, accessible à tous, sans nécessiter de GPU puissant</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="font-bold text-purple-600">🛡️ Responsable :</span>
+                <span>Code open-source réutilisable, pas de dépendances lourdes ou de tracking</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="font-bold text-green-600">♻️ Durable :</span>
+                <span>Optimisé pour une consommation minimale de ressources, fonctionne sur du matériel ancien</span>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
