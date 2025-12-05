@@ -25,9 +25,10 @@ export default function LinuxPage() {
               className="block w-20 h-20 relative shrink-0"
             >
               <Image
-                src={isHovering ? "/logo-linux.png" : "/logo-linux.webp"}
+                src={isHovering ? "/logo-linux-carton.png" : "/logo-linux.png"}
                 alt="Logo Linux"
-                fill
+                width={80}
+                height={80}
                 className="object-contain transition-all duration-200"
               />
             </Link>
