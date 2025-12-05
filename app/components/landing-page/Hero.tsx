@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="text-center max-w-4xl mx-auto mb-16 space-y-6">
           <div className="inline-block px-4 py-2 bg-linear-to-r from-blue-50 to-purple-50 rounded-full border border-purple-200">
             <span className="text-sm font-medium text-purple-700">
-              💪 {siteConfig.tagline}
+              {siteConfig.tagline}
             </span>
           </div>
           

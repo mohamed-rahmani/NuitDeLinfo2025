@@ -6,18 +6,76 @@ import { Button } from '@/components/ui/button'
 import { Download, Check } from 'lucide-react'
 import ActionHeader from '../components/ActionHeader'
 import { useState } from 'react'
+import BouncyImage from '../components/BouncyImage'
 
 export default function LinuxPage() {
   const [isHovering, setIsHovering] = useState(false)
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      {/* Failles sur les côtés */}
+      {/* Côté gauche */}
+      <div className="absolute left-0 top-0 h-full w-32 pointer-events-none z-10">
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute left-0 top-20 opacity-80"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute left-0 top-[400px] opacity-80"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute left-0 top-[780px] opacity-80"
+          style={{ imageRendering: 'pixelated' }}
+        />
+      </div>
+      
+      {/* Côté droit */}
+      <div className="absolute right-0 top-0 h-full w-32 pointer-events-none z-10">
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute right-0 top-32 opacity-80 scale-x-[-1]"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute right-0 top-[480px] opacity-80 scale-x-[-1]"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <Image
+          src="/faille.png"
+          alt=""
+          width={128}
+          height={400}
+          className="absolute right-0 top-[860px] opacity-80 scale-x-[-1]"
+          style={{ imageRendering: 'pixelated' }}
+        />
+      </div>
+      
       <ActionHeader />
 
       <main className="max-w-4xl mx-auto px-6 py-16">
         {/* Hero */}
-        <div className="mb-16">
-          <div className="flex items-center gap-6 mb-6">
+        <div className="mb-16 relative">
+          <div className="flex items-center gap-6 mb-6 relative">
             <Link 
               href="https://mohamed-rahmani.github.io/HiddenSnakeGame/"
               onMouseEnter={() => setIsHovering(true)}
@@ -32,6 +90,7 @@ export default function LinuxPage() {
                 className="object-contain transition-all duration-200"
               />
             </Link>
+            
             <h1 className="text-5xl font-bold text-gray-900">
               Adopter Linux
             </h1>
@@ -185,6 +244,9 @@ export default function LinuxPage() {
               </Link>
             </Button>
           </div>
+        </div>
+        <div className='flex justify-center pt-15'>
+        <BouncyImage src="/visuel.png" width={80} />
         </div>
       </main>
     </div>
