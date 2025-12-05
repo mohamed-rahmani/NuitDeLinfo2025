@@ -42,22 +42,6 @@ export default function Hero() {
               <a href={hero.cta.secondary.href} target="_blank" rel="noopener noreferrer">{hero.cta.secondary.text}</a>
             </Button>
           </div>
-
-          {/* Stats minimalistes */}
-          <div className="flex gap-8 justify-center pt-8">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-purple-600">∞</div>
-              <div className="text-xs md:text-sm text-gray-600">Matériel sauvé</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-green-600">100%</div>
-              <div className="text-xs md:text-sm text-gray-600">Logiciels libres</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-pink-600">0€</div>
-              <div className="text-xs md:text-sm text-gray-600">Dépendance Big Tech</div>
-            </div>
-          </div>
         </div>
       </div>
 

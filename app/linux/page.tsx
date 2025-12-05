@@ -1,10 +1,15 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Download, Check } from 'lucide-react'
 import ActionHeader from '../components/ActionHeader'
+import { useState } from 'react'
 
 export default function LinuxPage() {
+  const [isHovering, setIsHovering] = useState(false)
+
   return (
     <div className="min-h-screen bg-white">
       <ActionHeader />
@@ -13,14 +18,18 @@ export default function LinuxPage() {
         {/* Hero */}
         <div className="mb-16">
           <div className="flex items-center gap-6 mb-6">
-            <Link href="https://mohamed-rahmani.github.io/HiddenSnakeGame/">
-            <Image
-              src="/logo-linux.png"
-              alt="Logo Linux"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
+            <Link 
+              href="https://mohamed-rahmani.github.io/HiddenSnakeGame/"
+              onMouseEnter={() => setIsHovering(true)}
+              onMouseLeave={() => setIsHovering(false)}
+              className="block w-20 h-20 relative shrink-0"
+            >
+              <Image
+                src={isHovering ? "/logo-linux.png" : "/logo-linux.webp"}
+                alt="Logo Linux"
+                fill
+                className="object-contain transition-all duration-200"
+              />
             </Link>
             <h1 className="text-5xl font-bold text-gray-900">
               Adopter Linux
