@@ -13,13 +13,15 @@ export default function LinuxPage() {
         {/* Hero */}
         <div className="mb-16">
           <div className="flex items-center gap-6 mb-6">
+            <Link href="https://mohamed-rahmani.github.io/HiddenSnakeGame/">
             <Image
-              src="/logo-linux.webp"
+              src="/logo-linux.png"
               alt="Logo Linux"
               width={80}
               height={80}
               className="object-contain"
             />
+            </Link>
             <h1 className="text-5xl font-bold text-gray-900">
               Adopter Linux
             </h1>

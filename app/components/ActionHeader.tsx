@@ -39,13 +39,6 @@ export default function ActionHeader() {
           </Link>
         </nav>
 
-        {/* CTA Button */}
-        <div className="hidden md:block">
-          <Button className="bg-linear-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 rounded-full" asChild>
-            <Link href="/">Accueil</Link>
-          </Button>
-        </div>
-
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <Button 
@@ -97,12 +90,6 @@ export default function ActionHeader() {
             >
               🌱 Sobriété
             </Link>
-            <Button 
-              className="w-full bg-linear-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white mt-2" 
-              asChild
-            >
-              <Link href="/">Accueil</Link>
-            </Button>
           </div>
         </div>
       )}
