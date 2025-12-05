@@ -1,0 +1,113 @@
+Sujet du site:
+
+Présentation du sujet
+À l’heure où la fin du support de Windows 10 met en
+évidence la dépendance structurelle aux Big Tech, les
+établissements scolaires se retrouvent confrontés à un
+empire numérique puissant : matériel rendu obsolète
+alors qu’il fonctionne encore, licences coûteuses,
+stockage de données hors UE, écosystèmes fermés,
+abonnements indispensables…
+Face à ce Goliath numérique, l’École peut devenir un
+village résistant, ingénieux, autonome et créatif, à
+l’image du célèbre village d’Astérix.
+C’est précisément l’ambition de la démarche NIRD :
+permettre aux établissements scolaires d’adopter
+progressivement un Numérique Inclusif,
+Responsable et Durable, en redonnant du pouvoir
+d’agir aux équipes éducatives et en renforçant leur
+autonomie technologique.
+Votre équipe est engagée pour créer une application
+Web qui aide le public, élèves, enseignants, familles,
+collectivités, à comprendre comment un
+établissement peut réduire ses dépendances
+numériques et entrer dans la démarche NIRD, de
+manière progressive, réaliste et motivante.
+Pour faire croître la communauté NIRD, vous devez
+développer la plateforme qui permettrait de l’animer,
+d’encourager la contribution, de faire la promotion de
+NIRD sous toutes ses formes, faciliter la contribution
+au sein de la communauté et à l’extérieur, mettre en
+valeur les solutions proposées par la démarche NIRD,
+etc.
+L’application doit proposer une expérience ludique,
+attractive ou engageante. Il peut s’agir d’interactivité,
+d’illustrations, de mécaniques de choix, de petites
+énigmes, de défis, de scénarios, d’une ambiance
+humoristique… L’objectif : donner envie d’apprendre,
+de comprendre et d’agir.
+Vous êtes libres du format : outil interactif, mini-site
+narratif, parcours visuel, plateforme explicative,
+tableau de simulation, interface gamifiée, ou toute
+autre forme créative. L’important est de transmettre
+l’esprit de résistance numérique propre à NIRD.
+Soyez inventifs, surprenants, pédagogiques !
+Objectifs
+Important !
+L’application devra être en ligne à la fin de la Nuit
+pour être évaluée.
+Les équipes veilleront à utiliser des ressources
+libres de droit.
+Votre production devra être sous licence libre
+Nous vous souhaitons, à toutes et tous, une bonne Nuit de l’Info 2025 !
+Et surtout, n’oubliez pas de vous amuser !
+Conclusion
+Le sujet est volontairement vaste. Commencez par
+vous imprégner de la démarche NIRD : explorez le site
+existant, discutez avec les membres du collectif, posez
+vos questions.
+Des acteurs du NIRD seront disponibles pendant la
+Nuit pour vous guider, lever les doutes ou approfondir
+un aspect.
+
+Ses activités
+La démarche NIRD ( pour un Numérique Inclusif,
+Responsable et Durable) est portée par un collectif
+enseignant de la Forge des communs numériques
+éducatifs, projet soutenu par la Direction du numérique
+pour l'éducation. C'est une initiative d'en bas qui cherche
+à montrer en haut qu'il y urgence à agir pour changer la
+situation.
+Il associe un ensemble d’acteurs du système éducatif et
+des territoires :
+● Élèves et éco-délégués,
+● Enseignants et enseignantes,
+● Directions d’établissements,
+● Techniciens et administrateurs réseaux des
+lycées,
+● Associations partenaires et clubs informatiques,
+● Collectivités territoriales,
+● Services académiques et ministère.
+Ensemble, ces acteurs expérimentent, partagent et
+transforment les pratiques pour construire un numérique
+éducatif plus autonome, plus durable, plus éthique.
+Les acteurs du projet NIRD
+La démarche NIRD vise à promouvoir un numérique libre,
+responsable et écocitoyen au sein des établissements
+scolaires. Ses principales activités sont :
+● Sensibiliser les équipes éducatives et les élèves à
+la sobriété numérique,
+● Encourager le réemploi et le reconditionnement
+du matériel,
+● Promouvoir l’usage de Linux afin de lutter contre
+l’obsolescence programmée,
+● Mutualiser les ressources et outils libres via la
+Forge des communs numériques éducatifs,
+● Accompagner les établissements et collectivités
+dans une transition numérique écoresponsable,
+● Favoriser la co-construction de
+solutions numériques locales,
+ouvertes et autonomes.
+La démarche repose sur trois piliers :
+Inclusion, Responsabilité, Durabilité,
+qui guident l’ensemble des actions menées.
+
+Palettre de couleurs du site:
+🔵 Bleu : #1E40AF → blue-700 / blue-600 / blue-500
+🟣 Violet : #A855F7 → purple-500 / purple-600
+💜 Magenta : #D946EF → fuchsia-500 / pink-500
+🌸 Rose : #EC4899 → pink-500 / pink-600
+💛 Jaune : #FCD34D → yellow-300 / yellow-400
+
+Lien de la démarche NIRD:
+https://nird.forge.apps.education.fr/
