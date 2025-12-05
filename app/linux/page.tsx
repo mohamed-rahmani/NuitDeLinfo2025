@@ -13,61 +13,29 @@ export default function LinuxPage() {
 
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
-      {/* Failles sur les côtés */}
+      {/* Failles verticales sur les côtés */}
       {/* Côté gauche */}
       <div className="absolute left-0 top-0 h-full w-32 pointer-events-none z-10">
-        <Image
-          src="/faille.png"
-          alt=""
-          width={128}
-          height={400}
-          className="absolute left-0 top-20 opacity-80"
-          style={{ imageRendering: 'pixelated' }}
-        />
-        <Image
-          src="/faille.png"
-          alt=""
-          width={128}
-          height={400}
-          className="absolute left-0 top-[400px] opacity-80"
-          style={{ imageRendering: 'pixelated' }}
-        />
-        <Image
-          src="/faille.png"
-          alt=""
-          width={128}
-          height={400}
-          className="absolute left-0 top-[780px] opacity-80"
-          style={{ imageRendering: 'pixelated' }}
-        />
+        <svg width="100%" height="100%" style={{ imageRendering: 'pixelated' }}>
+          {/* Faille 1 */}
+          <rect x="5" y="80" width="50" height="50" fill="#1a1a1a" stroke="#39ff14" strokeWidth="2" />
+          <rect x="15" y="145" width="50" height="50" fill="#2d2d2d" stroke="#39ff14" strokeWidth="2" />
+          <rect x="8" y="210" width="50" height="50" fill="#333333" stroke="#39ff14" strokeWidth="2" />
+          <rect x="20" y="275" width="50" height="50" fill="#1a1a1a" stroke="#39ff14" strokeWidth="2" />
+          <rect x="10" y="340" width="50" height="50" fill="#2d2d2d" stroke="#39ff14" strokeWidth="2" />
+        </svg>
       </div>
       
       {/* Côté droit */}
       <div className="absolute right-0 top-0 h-full w-32 pointer-events-none z-10">
-        <Image
-          src="/faille.png"
-          alt=""
-          width={128}
-          height={400}
-          className="absolute right-0 top-32 opacity-80 scale-x-[-1]"
-          style={{ imageRendering: 'pixelated' }}
-        />
-        <Image
-          src="/faille.png"
-          alt=""
-          width={128}
-          height={400}
-          className="absolute right-0 top-[480px] opacity-80 scale-x-[-1]"
-          style={{ imageRendering: 'pixelated' }}
-        />
-        <Image
-          src="/faille.png"
-          alt=""
-          width={128}
-          height={400}
-          className="absolute right-0 top-[860px] opacity-80 scale-x-[-1]"
-          style={{ imageRendering: 'pixelated' }}
-        />
+        <svg width="100%" height="100%" style={{ imageRendering: 'pixelated' }}>
+          {/* Faille 1 */}
+          <rect x="15" y="120" width="50" height="50" fill="#2d2d2d" stroke="#39ff14" strokeWidth="2" />
+          <rect x="8" y="185" width="50" height="50" fill="#1a1a1a" stroke="#39ff14" strokeWidth="2" />
+          <rect x="18" y="250" width="50" height="50" fill="#333333" stroke="#39ff14" strokeWidth="2" />
+          <rect x="12" y="315" width="50" height="50" fill="#2d2d2d" stroke="#39ff14" strokeWidth="2" />
+          <rect x="20" y="380" width="50" height="50" fill="#1a1a1a" stroke="#39ff14" strokeWidth="2" />
+        </svg>
       </div>
       
       <ActionHeader />
