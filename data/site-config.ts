@@ -15,7 +15,7 @@ export const siteConfig = {
       {
         label: "Démarche NIRD",
         items: [
-          { label: "Les 3 Piliers", href: "/#piliers" },
+          { label: "Les 4 Piliers", href: "/#piliers" },
           { label: "Les Acteurs", href: "/#acteurs" },
           { label: "Site officiel NIRD", href: "https://nird.forge.apps.education.fr/" },
         ],
